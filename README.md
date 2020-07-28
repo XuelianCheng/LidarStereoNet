@@ -23,7 +23,7 @@ year={2019}
 
 ## Model
 We provide the checkpoints in [Best Model](https://drive.google.com/file/d/1NdEBdrUq8iM9ZkWjWmvfSph-3fPoE4yu/view?usp=sharing).
-To access our results on the selected KITTI 141 dataset , please directly use this link [Inference Images](https://drive.google.com/file/d/1XnrEU6Xwsok20EdFoSswkmkgdx1dHNUy/view?usp=sharing) and use matlab code to compute.
+To access our results on the selected KITTI 141 dataset , please directly use this link [Inference Images](https://drive.google.com/file/d/1XnrEU6Xwsok20EdFoSswkmkgdx1dHNUy/view?usp=sharing) and use matlab code to compute error matrix.
 
 ```shell
 run Inference_kitti141.m
