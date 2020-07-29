@@ -1,15 +1,14 @@
 ## LidarStereoNet
-This is the code for the paper:
+This is the code for our CVPR 2019 paper `Noise-Aware Unsupervised Deep Lidar-Stereo Fusion`
 
-Xuelian Cheng*, Yiran Zhong*, Yuchao Dai, Pan Ji, Hongdong Li.
-_Noise-Aware Unsupervised Deep Lidar-Stereo Fusion._
-In CVPR, 2019. https://arxiv.org/abs/1904.03868.
+[CVPR](https://openaccess.thecvf.com/content_CVPR_2019/papers/Cheng_Noise-Aware_Unsupervised_Deep_Lidar-Stereo_Fusion_CVPR_2019_paper.pdf)
+[arxiv](https://arxiv.org/abs/1904.03868)
+[video](https://youtu.be/8wBzUY8bAvU)
 
-Watch our video: https://youtu.be/8wBzUY8bAvU.
-
+The implementation of our model part is heavily borrow from [PSMNet](https://openaccess.thecvf.com/content_cvpr_2018/papers/Chang_Pyramid_Stereo_Matching_CVPR_2018_paper.pdf) and [Sparsity Invariant CNNs](http://www.cvlibs.net/publications/Uhrig2017THREEDV.pdf). 
 
 ### Citing
-If you find this code useful, please cite our work.
+If you find this code useful, please consider to cite our work.
 
 ```
 @inproceedings{cheng2019cvpr,
@@ -20,20 +19,11 @@ year={2019}
 }
 ```
 
-
-## Model
-We provide the checkpoints in [Best Model](https://drive.google.com/file/d/1NdEBdrUq8iM9ZkWjWmvfSph-3fPoE4yu/view?usp=sharing).
-To access our results on the selected KITTI 141 dataset , please directly use this link [Inference Images](https://drive.google.com/file/d/1XnrEU6Xwsok20EdFoSswkmkgdx1dHNUy/view?usp=sharing) and use matlab code to compute error matrix.
-
-```shell
-run Inference_kitti141.m
-```
-
 ## Installation
 
 ### Environment
 
-1. Ubuntu 16.04 LTS
+1. Python 2.7.*
 2. CUDA 10.0
 3. PyTorch 1.0.0
 4. TorchVision 0.4.0
@@ -43,6 +33,13 @@ Create a  virtual environment and activate it.
 ```shell
 pip install -r requirements.txt
 ```
+
+If the requirements.txt doesn't work, please try the following commands directly:
+```shell
+pip install torch==1.0.0 torchvision==0.4.0
+pip install scikit-image path.py
+```
+
 ### Dataset
 
 #### Training Dataset
@@ -58,5 +55,11 @@ It contains 141 frames from KITTI raw dataset that have corresponding frames in 
 Download the model-pth provided in [Best Model](https://drive.google.com/file/d/1NdEBdrUq8iM9ZkWjWmvfSph-3fPoE4yu/view?usp=sharing), and put them in `./checkpoint/`
 ```shell
 sh inference.sh
+```
+
+To evaluate our results on the selected KITTI 141 dataset , please directly use this link [Inference Images](https://drive.google.com/file/d/1XnrEU6Xwsok20EdFoSswkmkgdx1dHNUy/view?usp=sharing) and use matlab code to compute.
+
+```shell
+run Inference_kitti141.m
 ```
 
