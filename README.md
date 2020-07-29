@@ -1,7 +1,7 @@
 ## LidarStereoNet
 This repository contains the code for our CVPR 2019 paper `Noise-Aware Unsupervised Deep Lidar-Stereo Fusion` [[CVPR](https://openaccess.thecvf.com/content_CVPR_2019/papers/Cheng_Noise-Aware_Unsupervised_Deep_Lidar-Stereo_Fusion_CVPR_2019_paper.pdf)] [[arxiv](https://arxiv.org/abs/1904.03868)] [[video](https://youtu.be/8wBzUY8bAvU)]
 
-The implementation of our model part is heavily borrow from [PSMNet](https://openaccess.thecvf.com/content_cvpr_2018/papers/Chang_Pyramid_Stereo_Matching_CVPR_2018_paper.pdf) and [Sparsity Invariant CNNs](http://www.cvlibs.net/publications/Uhrig2017THREEDV.pdf). 
+The implementation of our model part is heavily borrowed from [PSMNet](https://openaccess.thecvf.com/content_cvpr_2018/papers/Chang_Pyramid_Stereo_Matching_CVPR_2018_paper.pdf) and [Sparsity Invariant CNNs](http://www.cvlibs.net/publications/Uhrig2017THREEDV.pdf). 
 
 ### Citing
 If you find this code useful, please consider to cite our work.
@@ -39,7 +39,7 @@ pip install scikit-image path.py
 ### Dataset
 
 #### Training Dataset
-KITTI VO dataset: contains 42104 images with a typical image resolution of 1241 × 376.
+[KITTI VO dataset](http://www.cvlibs.net/datasets/kitti/eval_odometry.php): contains 42104 images with a typical image resolution of 1241 × 376.
 
 We sorted all 22 KITTI VO sequences and found 7 frames from sequence 17 and 20 having corresponding frames in the KITTI 2015 training set. Therefore we excluded these two sequences and used the remaining 20 stereo sequences as our training dataset.
 
