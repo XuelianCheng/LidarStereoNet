@@ -1,9 +1,5 @@
 ## LidarStereoNet
-This is the code for our CVPR 2019 paper `Noise-Aware Unsupervised Deep Lidar-Stereo Fusion`
-
-[CVPR](https://openaccess.thecvf.com/content_CVPR_2019/papers/Cheng_Noise-Aware_Unsupervised_Deep_Lidar-Stereo_Fusion_CVPR_2019_paper.pdf)
-[arxiv](https://arxiv.org/abs/1904.03868)
-[video](https://youtu.be/8wBzUY8bAvU)
+This repository contains the code for our CVPR 2019 paper `Noise-Aware Unsupervised Deep Lidar-Stereo Fusion` [[CVPR](https://openaccess.thecvf.com/content_CVPR_2019/papers/Cheng_Noise-Aware_Unsupervised_Deep_Lidar-Stereo_Fusion_CVPR_2019_paper.pdf)] [[arxiv](https://arxiv.org/abs/1904.03868)] [[video](https://youtu.be/8wBzUY8bAvU)]
 
 The implementation of our model part is heavily borrow from [PSMNet](https://openaccess.thecvf.com/content_cvpr_2018/papers/Chang_Pyramid_Stereo_Matching_CVPR_2018_paper.pdf) and [Sparsity Invariant CNNs](http://www.cvlibs.net/publications/Uhrig2017THREEDV.pdf). 
 
@@ -57,7 +53,7 @@ Download the model-pth provided in [Best Model](https://drive.google.com/file/d/
 sh inference.sh
 ```
 
-To evaluate our results on the selected KITTI 141 dataset , please directly use this link [Inference Images](https://drive.google.com/file/d/1XnrEU6Xwsok20EdFoSswkmkgdx1dHNUy/view?usp=sharing) and use matlab code to compute.
+To evaluate our best results on the selected KITTI 141 dataset, please directly use this link [Inference Images](https://drive.google.com/file/d/1XnrEU6Xwsok20EdFoSswkmkgdx1dHNUy/view?usp=sharing) to download the inference disparity images and use the matlab code provided in `inference_matlab` to compute errors. You need to change the path of `stereo_disp_name_gt` and `stereo_disp_name_est` in `Inference_kitti141.m`.
 
 ```shell
 run Inference_kitti141.m
