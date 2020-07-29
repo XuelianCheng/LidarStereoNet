@@ -44,8 +44,7 @@ pip install scikit-image path.py
 We sorted all 22 KITTI VO sequences and found 7 frames from sequence 17 and 20 having corresponding frames in the KITTI 2015 training set. Therefore we excluded these two sequences and used the remaining 20 stereo sequences as our training dataset.
 
 #### Validation Dataset
-We proveide the selected KITTI 141 dataset in [KITTI 141](https://drive.google.com/file/d/1lsuM3LUfwR2c_L1c1rDzJ_aG5bwtUdUk/view?usp=sharing).
-It contains 141 frames from KITTI raw dataset that have corresponding frames in the KITTI 2015 dataset.
+We proveide the selected [KITTI 141 dataset](https://drive.google.com/file/d/1lsuM3LUfwR2c_L1c1rDzJ_aG5bwtUdUk/view?usp=sharing). It contains 141 frames from KITTI raw dataset that have corresponding frames in the KITTI 2015 dataset.
 
 ### Inference
 Download the model-pth provided in [Best Model](https://drive.google.com/file/d/1NdEBdrUq8iM9ZkWjWmvfSph-3fPoE4yu/view?usp=sharing), and put them in `./checkpoint/`
